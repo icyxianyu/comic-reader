@@ -1,17 +1,14 @@
 import { View, Text, SafeAreaView, ScrollView } from 'react-native';
 import { COLORS, icons, images, SIZES } from '../constants';
 import {
-    NearbyJobCard, Popularjobs, ScreenHeaderBtn, Welcome
+    Recommended, Popular, ScreenHeaderBtn, Welcome
 } from '../components';
-import { Stack, useRouter } from 'expo-router';
+import { Stack } from 'expo-router';
 
 export default function Home() {
-
-    const router = useRouter();
-
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
-            
+
             <Stack.Screen
                 options={{
                     headerStyle: { backgroundColor: COLORS.lightWhite },
@@ -27,8 +24,6 @@ export default function Home() {
                     headerTitle: ""
                 }}
             />
-
-
             <ScrollView showsVerticalScrollIndicator={false}>
                 <View
                     style={{
@@ -37,8 +32,8 @@ export default function Home() {
                     }}
                 >
                     <Welcome />
-                    <Popularjobs />
-                    <NearbyJobCard />
+                    <Popular />
+                    <Recommended />
                 </View>
             </ScrollView>
         </SafeAreaView >

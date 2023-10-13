@@ -1,6 +1,12 @@
-import { StyleSheet } from "react-native";
+import {
+  StyleSheet
+} from "react-native";
 
-import { COLORS, SHADOWS, SIZES } from "../../../../constants";
+import {
+  COLORS,
+  SHADOWS,
+  SIZES
+} from "../../../../constants";
 
 const styles = StyleSheet.create({
   container: {
@@ -30,11 +36,11 @@ const styles = StyleSheet.create({
     flex: 1,
     marginHorizontal: SIZES.medium,
   },
-  jobName: {
+  comicName: {
     fontSize: SIZES.medium,
     color: COLORS.primary,
   },
-  jobType: {
+  authorName: {
     fontSize: SIZES.small + 2,
     color: COLORS.gray,
     marginTop: 3,

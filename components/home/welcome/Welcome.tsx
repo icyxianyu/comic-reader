@@ -7,7 +7,7 @@ import styles from './welcome.style'
 
 const Welcome = () => {
 
-  const data: string[] = ["测试1", "测试2", "测试3", "测试4", "测试5"]
+  const data: string[] = ["测试1", "测试2", "测试3", "测试4", "测试5", "测试6"]
   const [searchText, setSearchText] = useState('');
   const router = useRouter();
 
@@ -16,7 +16,6 @@ const Welcome = () => {
   }, [])
 
   const changeTabs = useCallback((item: string) => {
-    console.log(item)
     router.push(`/${item}`)
   }, [])
 
@@ -57,6 +56,7 @@ const Welcome = () => {
             </TouchableOpacity>
           }}
           keyExtractor={item => item}
+          showsHorizontalScrollIndicator={false}
           contentContainerStyle={{ columnGap: SIZES.small }}
           horizontal
         ></FlatList>

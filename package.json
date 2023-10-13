@@ -1,7 +1,15 @@
 {
   "name": "comic-reader",
   "version": "1.0.0",
+  "author": "Rafael",
   "main": "index.tsx",
+  "types": "index.d.ts",
+  "license": "MIT",
+  "description": "A simple comic reader",
+  "keywords": [
+    "comic",
+    "reader"
+  ],
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
